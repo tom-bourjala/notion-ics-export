@@ -117,3 +117,5 @@ cron.schedule("*/10 * * * *", async () => {
         console.log("The file was saved!");
     });
 });
+
+console.log("Server started");
