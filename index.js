@@ -118,4 +118,4 @@ cron.schedule("*/10 * * * *", async () => {
     });
 });
 
-console.log("Server started");
+console.log("Schedule initiated");

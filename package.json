@@ -12,6 +12,7 @@
   "dependencies": {
     "@notionhq/client": "^2.2.13",
     "dotenv": "^16.3.1",
+    "http": "^0.0.1-security",
     "node-cron": "^3.0.2"
   }
 }

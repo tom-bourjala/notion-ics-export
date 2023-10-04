@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Notion Meetings//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+SUMMARY:Meeting about Scalable systems
+UID:ae1b50b8-9914-4c43-8abf-453096b9ba9a@notion_meetings
+DTSTAMP:20231004T202701Z
+DTSTART:20231005T080000Z
+DTEND:20231005T100000Z
+URL:https://www.notion.so/Meeting-about-Scalable-systems-ae1b50b899144c438abf453096b9ba9a
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Scalable systems Wednesday Meeting
+UID:6928e0a9-adfe-4487-8917-f38ba130d7a8@notion_meetings
+DTSTAMP:20231004T202704Z
+DTSTART:20231004T180000Z
+DTEND:20231004T193000Z
+URL:https://www.notion.so/Scalable-systems-Wednesday-Meeting-6928e0a9adfe44878917f38ba130d7a8
+DESCRIPTION:Scheduled tasks:\n☐ Select Dataset\n☐ Work on archiecture design
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Friday 06/10 Intractive Systems Meeeting  
+UID:cd99e1fc-4bd6-4a49-95cb-7b263459433e@notion_meetings
+DTSTAMP:20231004T202706Z
+DTSTART:20231006T100000Z
+DTEND:20231006T130000Z
+URL:https://www.notion.so/Friday-06-10-Intractive-Systems-Meeeting-cd99e1fc4bd64a4995cb7b263459433e
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monday Evening 2/10
+UID:40041d7f-028e-4d9f-9085-efe6b0ecdc2e@notion_meetings
+DTSTAMP:20231004T202709Z
+DTSTART:20231002T180000Z
+DTEND:20231002T200000Z
+URL:https://www.notion.so/Monday-Evening-2-10-40041d7f028e4d9f9085efe6b0ecdc2e
+DESCRIPTION:Scheduled tasks:\n☐ Review results of our tasks\n☐ Distribute work for latest exercise
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Friday 09/29 IS Meeting
+UID:28de3546-68bf-40a3-ac2a-bc7483eb4b0b@notion_meetings
+DTSTAMP:20231004T202710Z
+DTSTART:20230928T220000Z
+DTEND:20230929T000000Z
+URL:https://www.notion.so/Friday-09-29-IS-Meeting-28de354668bf40a3ac2abc7483eb4b0b
+DESCRIPTION:Scheduled tasks:\n☑ Review BDD & Task models\n☑ Premilinary search for prompting patterns\n☑ Plan tasks for next week
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Friaday 09/29 SA Meeting
+UID:a868293c-61c4-4f0b-8315-360d06d79bb3@notion_meetings
+DTSTAMP:20231004T202711Z
+DTSTART:20230929T080000Z
+DTEND:20230929T100000Z
+URL:https://www.notion.so/Friaday-09-29-SA-Meeting-a868293c61c44f0b8315360d06d79bb3
+DESCRIPTION:Scheduled tasks:\n☑ Review the tasks\n☐ Get trought 2 next exercises
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25/09 SA Meeting and Pitch preparation
+UID:4d667dbb-88a8-43a1-a9fe-b462507e2a08@notion_meetings
+DTSTAMP:20231004T202711Z
+DTSTART:20230925T000000Z
+DTEND:20230925T020000Z
+URL:https://www.notion.so/25-09-SA-Meeting-and-Pitch-preparation-4d667dbb88a843a1a9feb462507e2a08
+DESCRIPTION:Scheduled tasks:\n☑ Finishing peer review\n☑ Prepare pitch
+END:VEVENT
+END:VCALENDAR
