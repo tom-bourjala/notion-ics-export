@@ -78,7 +78,7 @@ async function getICSEventFromMeetingDetails(meetingDetails) {
     ICSEvent += `DTSTAMP:${formatICSDate(new Date())}\n`;
     ICSEvent += `DTSTART:${formatedStartTimestamp}\n`;
     ICSEvent += `DTEND:${formatedEndTimestamp}\n`;
-    ICSEvent += `URL:${meetingDetails["URL"]}\n`;
+    //ICSEvent += `URL:${meetingDetails["URL"]}\n`;
     let description = ``;
     if(meetingDetails["Plan"].length > 0)
         description += `${meetingDetails["Plan"]}`;
