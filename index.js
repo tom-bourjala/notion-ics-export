@@ -107,15 +107,24 @@ async function constructICSFile() {
 
 // schedule tasks to be run every 30 minutes
 const cron = require("node-cron");
-cron.schedule("*/30 * * * *", async () => {
+
+async function updateFile(){
     const ICSFile = await constructICSFile();
     const fs = require('fs');
     fs.writeFile("ICS/meetings.ics", ICSFile, function(err) {
         if(err) {
             return console.log(err);
         }
-        console.log("The file was saved!");
+        console.log("ICS file updated.");
     });
+}
+
+cron.schedule("*/30 * * * *", async () => {
+    console.log("Updating ICS file...");
+    await updateFile();
 });
 
 console.log("Schedule initiated");
+
+console.log("Updating ICS file...");
+updateFile();
