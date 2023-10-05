@@ -17,7 +17,7 @@ async function getToDoFromPage(pageId) {
     });
     let toDos = response.results.filter((block) => block.type === "to_do");
     toDos = toDos.filter((block) => block.to_do.rich_text[0] !== undefined);
-    toDos = toDos.map((block) => `${block.to_do.checked ? '☑' : '☐' } ${block.to_do.rich_text[0].plain_text}`);
+    toDos = toDos.map((block) => `${block.to_do.checked ? '[X]' : '[ ]' } ${block.to_do.rich_text[0].plain_text}`);
     return toDos;
 }
 
@@ -83,7 +83,8 @@ async function getICSEventFromMeetingDetails(meetingDetails) {
     if(meetingDetails["Plan"].length > 0)
         description += `${meetingDetails["Plan"]}`;
     if(description.length > 61){
-        description = description.substring(0, 58);
+        while((description[description.length - 1] !== ' ' && description[description.length - 1] !== '\n') || description.length > 58)
+            description = description.substring(0, description.length - 1);
         description += "...";
     }
     ICSEvent += `DESCRIPTION:${description}\n`;
@@ -115,7 +116,8 @@ const cron = require("node-cron");
 async function updateFile(){
     const ICSFile = await constructICSFile();
     const fs = require('fs');
-    fs.writeFile("ICS/meetings.ics", ICSFile, function(err) {
+    // write to a new file in utf8 format
+    fs.writeFile("ICS/meetings.ics", ICSFile, 'utf8', (err) => {
         if(err) {
             return console.log(err);
         }
