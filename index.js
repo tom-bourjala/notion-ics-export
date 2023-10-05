@@ -105,9 +105,9 @@ async function constructICSFile() {
 }
 
 
-// schedule tasks to be run every 10 minutes
+// schedule tasks to be run every 30 minutes
 const cron = require("node-cron");
-cron.schedule("*/10 * * * *", async () => {
+cron.schedule("*/30 * * * *", async () => {
     const ICSFile = await constructICSFile();
     const fs = require('fs');
     fs.writeFile("ICS/meetings.ics", ICSFile, function(err) {
