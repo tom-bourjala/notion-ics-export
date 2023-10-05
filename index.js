@@ -81,7 +81,11 @@ async function getICSEventFromMeetingDetails(meetingDetails) {
     ICSEvent += `URL:${meetingDetails["URL"]}\n`;
     let description = ``;
     if(meetingDetails["Plan"].length > 0)
-        description += `Scheduled tasks:\\n${meetingDetails["Plan"]}`;
+        description += `${meetingDetails["Plan"]}`;
+    if(description.length > 75){
+        description = description.substring(0, 70);
+        description += "...";
+    }
     ICSEvent += `DESCRIPTION:${description}\n`;
     ICSEvent += `END:VEVENT\n`;
     return ICSEvent;
