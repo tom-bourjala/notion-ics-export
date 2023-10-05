@@ -82,8 +82,8 @@ async function getICSEventFromMeetingDetails(meetingDetails) {
     let description = ``;
     if(meetingDetails["Plan"].length > 0)
         description += `${meetingDetails["Plan"]}`;
-    if(description.length > 75){
-        description = description.substring(0, 70);
+    if(description.length > 61){
+        description = description.substring(0, 58);
         description += "...";
     }
     ICSEvent += `DESCRIPTION:${description}\n`;
