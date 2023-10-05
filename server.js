@@ -1,8 +1,8 @@
 require('./index');
 const http = require("http");
 
-const host = 'localhost';
-const port = 8000;
+const host = '0.0.0.0';
+const port = 8080;
 
 const requestListener = function(req, res) {
     res.writeHead(200);
